@@ -1,16 +1,24 @@
 //STEP 1 - Add Express to your Node server (make sure you have installed it...):
-
+var express = require('express');
 //STEP 5 - At the bottom of this file, you will see some commented out code. Move section 1 here:
+// var session = require('express-session');
+// var bodyParser = require('body-parser');
+// var cors = require('cors');
+// var morgan = require('morgan');
+// var mongoose = require('mongoose');
 
 
 
 //STEP 2 - var app and var port will go here:
-
+var app = express();
+var port = 9001;
 
 //STEP 6 - Finally grab section 2 at the bottom of this file and drop it here:
 
 //STEP 3 - Code for your app.listen() here:
-
+app.listen(port, function() {
+  console.log("Now listening on port: ", port);
+})
 
 //STEP 4 - Test your server. You should be able to run nodemon in your terminal and see your console.log that you put in your app.listen callback function. If you see that, you are in business!
 //STEP 7 - Once your own code is up, and all the code from below, you can run mongod, and then start up your server, then go to localhost:8000 (or whatever your port number is), and see the whole project run.
